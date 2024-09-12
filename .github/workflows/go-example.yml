@@ -59,9 +59,9 @@ jobs:
     needs: build-go
     steps:
       - name: Checkout Go code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Download Windows artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: windows
